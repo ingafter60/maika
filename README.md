@@ -2,9 +2,17 @@
 
 ## STEPS
 
-# 1. Create the app
-# 2. modified:   Gemfile and modified:   README.md
+# VIDEO 1
 
-
+## 1. Create the app
+## 2. modified:   Gemfile and modified:   README.md
+## 3. Added vue: $ yarn add vue-turbolinks
+## 4. Add vue: $ yarn add vue-resource
+## 5. Added mailcatcher
+## 6. Git: added 3-5
+        modified:   README.md
+        modified:   config/environments/development.rb
+        modified:   package.json
+        modified:   yarn.lock
 
 
