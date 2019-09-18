@@ -14,5 +14,10 @@
         modified:   config/environments/development.rb
         modified:   package.json
         modified:   yarn.lock
+## 7. Add gem devise
+## 8. Create controller home index
+## 9. Add home route
+## 10. Modified app layout
+## 11. Use guard : > guard init livereload ; > bundle exec guard
 
 
