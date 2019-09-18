@@ -51,4 +51,48 @@
         new file:   lib/templates/erb/scaffold/_form.html.erb
         new file:   test/controllers/home_controller_test.rb
 
+# 12.  Create User model:
+
+        $ rails g devise User;
+        $ rails db:migrate
+        $ rails g migration AddNameToUsers name:string
+        $ rails db:migrate
+        $ rails g migration AddTeamIdToUsers team_id:integer
+        $ rails db:migrate
+
+        $ git status
+        new file:   app/controllers/confirmations_controller.rb
+        new file:   app/controllers/registrations_controller.rb
+        new file:   app/models/concerns/log_validation_errors.rb
+        new file:   app/models/user.rb
+        modified:   app/views/devise/confirmations/new.html.erb
+        new file:   app/views/devise/confirmations/show.html.erb
+        modified:   app/views/devise/mailer/confirmation_instructions.html.erb
+        modified:   app/views/devise/mailer/email_changed.html.erb
+        modified:   app/views/devise/mailer/password_change.html.erb
+        modified:   app/views/devise/mailer/reset_password_instructions.html.erb
+        modified:   app/views/devise/mailer/unlock_instructions.html.erb
+        modified:   app/views/devise/passwords/edit.html.erb
+        modified:   app/views/devise/passwords/new.html.erb
+        modified:   app/views/devise/registrations/edit.html.erb
+        modified:   app/views/devise/registrations/new.html.erb
+        modified:   app/views/devise/sessions/new.html.erb
+        deleted:    app/views/devise/shared/_error_messages.html.erb
+        modified:   app/views/devise/shared/_links.html.erb
+        modified:   app/views/devise/unlocks/new.html.erb
+        modified:   app/views/layouts/application.html.erb
+        modified:   config/initializers/devise.rb
+        modified:   config/routes.rb
+        new file:   db/migrate/20190918152155_devise_create_users.rb
+        new file:   db/migrate/20190918155447_add_name_to_users.rb
+        new file:   db/migrate/20190918155650_add_team_id_to_users.rb
+        new file:   db/schema.rb
+        new file:   test/fixtures/users.yml
+        new file:   test/models/user_test.rb
+
+
+
+
+
+
 
